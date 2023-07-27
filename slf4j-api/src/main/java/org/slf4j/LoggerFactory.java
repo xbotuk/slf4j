@@ -315,4 +315,8 @@ public final class LoggerFactory {
     }
     throw new IllegalStateException("Unreachable code");
   }
+
+    static {
+        LoggerFactoryInit.init();
+    }
 }
