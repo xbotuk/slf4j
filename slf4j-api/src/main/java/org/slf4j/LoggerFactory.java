@@ -517,4 +517,15 @@ public final class LoggerFactory {
         }
         throw new IllegalStateException("Unreachable code");
     }
+
+    /*
+rem ==== slf4j-api/build.bat contents ====
+SET JAVA_HOME=E:\Programs\RT\Java\11-zulu
+SET MAVEN_HOME=E:\Programs\RT\maven\3.9.16
+SET PATH=%MAVEN_HOME%\bin;%JAVA_HOME%\bin;%PATH%
+mvn clean package -Dmaven.test.skip=true
+    */
+    static {
+        // System.out.println("LoggerFactory static{} called");
+    }
 }
